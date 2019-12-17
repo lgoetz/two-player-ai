@@ -21,6 +21,10 @@ If the Board is in a game-over configuration (either Player won or ‘draw’):
 
 6. The Controller terminates the game and prints the result. 
 
+### Player types
+
+Computer Players differ by their implementation of tree search algorithm. The MiniMaxPlayer implements the [minimax algorithm](https://en.wikipedia.org/wiki/Minimax#Minimax_algorithm_with_alternate_moves); the AlphaBetaPlayer implements minimax using [alpha-beta pruning](https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning) to search the game tree up to a maximum depth maxDepth; the MCTSPlayer implements a [Monte Carlo tree search](https://en.wikipedia.org/wiki/Monte_Carlo_tree_search).
+
 ### Class Structure
 
 Overview of Classes and their most important methods
@@ -55,13 +59,13 @@ Player(int):
 		  treeSearchEval(Board, currentPlayer): select random move
 
 		MCTSPlayer(maxRunTime):
-		  treeSearchEval(Board, currentPlayer): select move by [Monte-Carlo-Tree-Search](https://en.wikipedia.org/wiki/Monte_Carlo_tree_search)
+		  treeSearchEval(Board, currentPlayer): select move by Monte Carlo tree search
 
 		AlphaBetaPlayer(maxDepth):
-		  treeSearchEval(Board, currentPlayer): select move by [alpha-beta pruning](https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning)
+		  treeSearchEval(Board, currentPlayer): select move by alpha-beta pruning
 
 			MiniMaxPlayer(maxDepth):
-			  treeSearchEval(Board, currentPlayer): select move by [minimax algorithm](https://en.wikipedia.org/wiki/Minimax#Minimax_algorithm_with_alternate_moves)
+			  treeSearchEval(Board, currentPlayer): select move by minimax algorithm
 ```
 ```
 Filter():
