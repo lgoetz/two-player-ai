@@ -4,7 +4,9 @@ This project was inspired by recent successes of [board game-playing AI](https:/
 
 This doc describes
 * the game flow
+* player types
 * the class structure
+* a class tree
 * heuristics for approximating field scores
 
 ### Game Flow
@@ -78,6 +80,10 @@ Filter():
 	  apply([][]): apply multiple filters to Board
 ```
 
+
+### Class Tree
+
+![tictactoe-class-tree](https://github.com/lgoetz/two-player-ai/blob/master/tictactoe_class_diagram.png)
 
 ### Heuristics for approximating scores
 
